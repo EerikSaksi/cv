@@ -1,11 +1,29 @@
+<script>
+	import Experience from './_experience.svelte';
+	import Project from './_project.svelte';
+</script>
+
 <main class="font-firago hyphens-manual">
 	<!-- Page -->
 	<div
-		class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-a4 xsm:p-8 sm:p-9 md:p-16 print:bg-white bg-gray-100"
+		class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white"
 	>
+		<!-- Name -->
+		<header class="flex items-center mb-8 md:mb-11">
+			<div
+				class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3"
+				style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/"
+			>
+				<div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">E</div>
+				<div class="text-center initial">S</div>
+			</div>
+			<h1 class="text-2xl font-semibold text-gray-750 pb-px">Eerik Saksi</h1>
+		</header>
+		<!-- end Name -->
+
 		<!-- Column -->
 		<div
-			class="md:col-count-2 print:col-count-2 col-gap-md md:h-a4-col-full print:h-a4-col-full col-fill-auto"
+			class="md:col-count-2 print:col-count-2 col-gap-md md:h-a4-col print:h-a4-col col-fill-auto"
 		>
 			<section class="mt-8 first:mt-0">
 				<!-- To keep in the same column -->
@@ -16,37 +34,21 @@
 
 					<section class="mb-4.5 break-inside-avoid">
 						<header>
-							<h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-								User Interface Designer
-							</h3>
-							<p class="leading-normal text-md text-gray-650">Since 2010</p>
+							<h3 class="text-lg font-semibold text-gray-700 leading-snugish">Rust Developer</h3>
 						</header>
 						<p class="mt-2.1 text-md text-gray-700 leading-normal">
-							Minimal and formal résumé website template for print, mo&shy;bile, and desktop. The
-							proportions are the same on the screen and paper. Built with amazing <a
-								class="hover:bg-gray-150 rounded-lg transition ease-in duration-100"
-								href="https://tailwindcss.com/">Tailwind CSS&nbsp;°</a
-							>.
+							Passionate about WebAssembly and writing fast, safe and scalable servers/microservices
 						</p>
 					</section>
 				</div>
 
 				<section class="mb-4.5 break-inside-avoid">
 					<header>
-						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">Front-End Developer</h3>
-						<p class="leading-normal text-md text-gray-650">Since 2013</p>
+						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">Fullstack Developer</h3>
 					</header>
 					<p class="mt-2.1 text-md text-gray-700 leading-normal">
-						“docs/index.html” is the main content file. By copying HTML: add pages, sec&shy;tions,
-						subsection, and other parts.
-					</p>
-					<p class="mt-2.1 text-md text-gray-700 leading-normal">
-						<span class="font-medium text-gray-600 print:text-black">Important:</span> Too much content
-						on one page will break the page in the form of additional columns.
-					</p>
-					<p class="mt-2.1 text-md text-gray-700 leading-normal">
-						If you want to change CSS in the classical way, add a class to the HTML element and
-						write CSS inside “tailwind.css.”
+						Passionate about writing fast websites with minimal javascript, cross platform mobile
+						development, and automatic servers from databases
 					</p>
 				</section>
 			</section>
@@ -57,67 +59,14 @@
 					<h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
 						EXPERIENCE
 					</h2>
-
-					<section class="mb-4.5 break-inside-avoid">
-						<header>
-							<h3 class="text-lg font-semibold text-gray-700 leading-snugish">WebPraktikos Inc.</h3>
-							<p class="leading-normal text-md text-gray-650">Jun 2018 – Present | Web Developer</p>
-						</header>
-						<p class="mt-2.1 text-md text-gray-700 leading-normal">
-							Built doner pork chop &bull; Served salmon, cream soft cheese, and brisket &bull;
-							Acted 55% pork chop &bull; Filled burgdoggen & frankfurter strip steak with 90% burger
-							patties and broth
-						</p>
-					</section>
+					<Experience />
 				</div>
 
-				<section class="mb-4.5 break-inside-avoid">
-					<header>
-						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">Mammoth GmbH</h3>
-						<p class="leading-normal text-md text-gray-650">
-							Feb 2017 – Apr 2018 | Android Developer
-						</p>
-					</header>
-					<ul class="">
-						<li class="mt-2.1 text-md text-gray-700 leading-normal">
-							<span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-							Cooked shrimps for 2 to 3 minutes per side, or until opaque; then, transfered to a serving
-							dish with limon
-						</li>
-						<li class="mt-2.1 text-md text-gray-700 leading-normal">
-							<span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-							Roasted a pig, turning frequently, until meat reached 160°F in the thickest part of the
-							shoulder or thigh
-						</li>
-					</ul>
-				</section>
-
-				<section class="mb-4.5 break-inside-avoid">
-					<header>
-						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-							Exquisite Systems d.o.o.
-						</h3>
-						<p class="leading-normal text-md text-gray-650">
-							May 2015 – Dec 2016 | Software QA Specialist
-						</p>
-					</header>
-					<ul class="">
-						<li class="mt-2.1 text-md text-gray-700 leading-normal">
-							<span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-							Made stockfish, which is unsalted fish, usully cod, dried by cold air and wind on wooden
-							racks on the foreshore
-						</li>
-						<li class="mt-2.1 text-md text-gray-700 leading-normal">
-							<span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-							Preserved meat without salt by removing fat, cutting it into very thin strips and drying
-							it in the sun or by a fire.
-						</li>
-						<li class="mt-2.1 text-md text-gray-700 leading-normal">
-							<span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-							Testend shrimp, crab, lobster, scallops, clams, crawfish
-						</li>
-					</ul>
-				</section>
+				<Experience
+					company="Barclays UK"
+					timeRange="Jun 2021 – Aug 2021 | Technology Developer Intern"
+					bulletPoints={['Worked in techonology resillience and incident management']}
+				/>
 			</section>
 
 			<section class="mt-8 first:mt-0">
@@ -130,39 +79,14 @@
 					<section class="mb-4.5 break-inside-avoid">
 						<header>
 							<h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-								Graz University of Technology
+								University of Glasgow
 							</h3>
 							<p class="leading-normal text-md text-gray-650">
-								2014 – 2015 | Master's Degree in Chemistry
+								2018 – 2022 | Master's Degree in Computing
 							</p>
 						</header>
-						<p class="mt-2.1 text-md text-gray-700 leading-normal">
-							Barbecued shrimp, broiled shrimp, shrimp kabobs
-						</p>
 					</section>
 				</div>
-
-				<section class="mb-4.5 break-inside-avoid">
-					<header>
-						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-							Vienna University of Technology
-						</h3>
-						<p class="leading-normal text-md text-gray-650">
-							2010 – 2013 | Bachelor’s Degree in Biology
-						</p>
-					</header>
-				</section>
-
-				<section class="mb-4.5 break-inside-avoid">
-					<header>
-						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-							Vienna University of Technology
-						</h3>
-						<p class="leading-normal text-md text-gray-650">
-							2010 – 2013| Bachelor’s Degree in Chemistry
-						</p>
-					</header>
-				</section>
 			</section>
 
 			<section class="mt-8 first:mt-0">
@@ -171,78 +95,34 @@
 					<h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
 						PROJECTS
 					</h2>
-
-					<section class="mb-4.5 break-inside-avoid">
-						<header>
-							<h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-								<a href="https://github.com/WebPraktikos/universal-resume" class="group">
-									Universal Resume
-									<span
-										class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
-										>↗</span
-									>
-								</a>
-							</h3>
-							<p class="leading-normal text-md text-gray-650">Since 2019 | HTML CSS</p>
-						</header>
-						<p class="mt-2.1 text-md text-gray-700 leading-normal">
-							Good design is as little design as possible. Less, but better — because it
-							concentrates on the essential aspects, and the pro&shy;ducts are not burdened with
-							non-essentials.
-						</p>
-					</section>
-				</div>
-
-				<section class="mb-4.5 break-inside-avoid">
-					<header>
-						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-							<a href="https://github.com/WebPraktikos/tailwindcss-rich-docs" class="group">
-								tailwindcss-rich-docs
-								<span
-									class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
-									>↗</span
-								>
+					<Project>
+						<div class="flex my-1">
+							<a href="https://play.google.com/store/apps/details?id=com.statbuff">
+								<img
+									class="h-6 mr-2"
+									src="https://www.freepnglogos.com/uploads/google-play-png-logo/google-play-logo-google-play-game-google-play-store-app-00.jpg"
+									alt=""
+								/>
 							</a>
-						</h3>
-						<p class="leading-normal text-md text-gray-650">2017 | JavaScript</p>
-					</header>
-					<p class="mt-2.1 text-md text-gray-700 leading-normal">
-						Good design is long-lasting. It avoids being fashionable and therefore never appears
-						antiquated.
-					</p>
-					<p class="mt-2.1 text-md text-gray-700 leading-normal">
-						Good design is honest. It does not make a product more innovative, powerful or valuable
-						than it really is.
-					</p>
-				</section>
 
-				<section class="mb-4.5 break-inside-avoid">
-					<header>
-						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">Third One</h3>
-						<p class="leading-normal text-md text-gray-650">2013 – 2014 | Vue</p>
-					</header>
-					<p class="mt-2.1 text-md text-gray-700 leading-normal">
-						Good design is innovative. Technological development is always offering new
-						opportunities for innovative design.
-					</p>
-					<p class="mt-2.1 text-md text-gray-700 leading-normal">
-						Good design emphasizes the usefulness of a product whilst disregarding anything that
-						could possibly detract from it.
-					</p>
-				</section>
-
-				<section class="mb-4.5 break-inside-avoid">
-					<header>
-						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">Fantastic Project</h3>
-						<p class="leading-normal text-md text-gray-650">2012 | JavaScript</p>
-					</header>
-					<p class="mt-2.1 text-md text-gray-700 leading-normal">
-						Products fulfilling a purpose are like tools. They are neither decorative objects nor
-						works of art. Their design should therefore be both neutral and restrained, to leave
-						room for the user’s self-expression.
-					</p>
-				</section>
+							<a
+								href="https://web.archive.org/web/20210831133805/https://apps.apple.com/iq/app/stat-buff/id1551529468"
+							>
+								<img
+									class="h-6"
+									src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Apple_Store_logo.svg/1024px-Apple_Store_logo.svg.png"
+									alt=""
+								/>
+							</a>
+						</div>
+					</Project>
+				</div>
 			</section>
+			<Project
+				name="Postgrustql"
+				timeRange="Sep 2021 - May 2022"
+				description="Postgrustql transforms a Postgres database into a GraphQL server accepting read and writes automatically. This project was designed to compete with existing projects such as Postgraphile and Hasura."
+			/>
 
 			<section class="mt-8 first:mt-0">
 				<!-- To keep in the same column -->
@@ -263,22 +143,22 @@
 						<div class="my-3.2 last:pb-1.5">
 							<ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
 								<li
-									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
 								>
 									ES6
 								</li>
 								<li
-									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
 								>
 									Vue
 								</li>
 								<li
-									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
 								>
 									Functional Programming
 								</li>
 								<li
-									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
+									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
 								>
 									Node
 								</li>
@@ -291,60 +171,6 @@
 					<header>
 						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">Other</h3>
 					</header>
-					<div class="my-3.2 last:pb-1.5">
-						<ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
-							<li
-								class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-							>
-								CSS
-							</li>
-							<li
-								class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-							>
-								Rust
-							</li>
-							<li
-								class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-							>
-								Git
-							</li>
-							<li
-								class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-							>
-								Go
-							</li>
-							<li
-								class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-							>
-								Linux Server
-							</li>
-							<li
-								class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-							>
-								UI Design
-							</li>
-							<li
-								class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-							>
-								Photoshop
-							</li>
-							<li
-								class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-							>
-								Illustrator
-							</li>
-							<li
-								class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-							>
-								Figma
-							</li>
-							<li
-								class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 leading-relaxed print:bg-white print:border-inset bg-gray-250"
-							>
-								Typography
-							</li>
-						</ul>
-					</div>
 				</section>
 			</section>
 
@@ -386,7 +212,4 @@
 		<!-- end Column -->
 	</div>
 	<!-- end Page -->
-
-	<!-- end Page -->
 </main>
-
