@@ -2,6 +2,7 @@
 	import Experience from './_experience.svelte';
 	import Project from './_project.svelte';
 	import Skill from './_skill.svelte';
+	import SectionContainer from './_section_container.svelte';
 </script>
 
 <main class="font-firago hyphens-manual">
@@ -24,7 +25,7 @@
 		<div
 			class="md:col-count-2 print:col-count-2 col-gap-md md:h-a4-col print:h-a4-col col-fill-auto"
 		>
-			<section class="mt-8 first:mt-0">
+			<SectionContainer>
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
 					<h2 class="title">ABOUT ME</h2>
@@ -48,9 +49,9 @@
 						development, and automatic servers from databases
 					</p>
 				</section>
-			</section>
+			</SectionContainer>
 
-			<section class="mt-8 first:mt-0">
+			<SectionContainer>
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
 					<h2 class="title">EXPERIENCE</h2>
@@ -62,9 +63,9 @@
 					timeRange="Jun 2021 – Aug 2021 | Technology Developer Intern"
 					bulletPoints={['Worked in techonology resillience and incident management']}
 				/>
-			</section>
+			</SectionContainer>
 
-			<section class="mt-8 first:mt-0">
+			<SectionContainer>
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
 					<h2 class="title">EDUCATION</h2>
@@ -78,9 +79,9 @@
 						</header>
 					</section>
 				</div>
-			</section>
+			</SectionContainer>
 
-			<section class="mt-8 first:mt-0">
+			<SectionContainer>
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
 					<h2 class="title">PROJECTS</h2>
@@ -106,7 +107,7 @@
 						</div>
 					</Project>
 				</div>
-			</section>
+			</SectionContainer>
 			<Project
 				name="Postgrustql"
 				timeRange="Sep 2021 - May 2022"
@@ -114,7 +115,7 @@
 				techonologyNames={['Rust', 'Actix Web', 'GraphQL', 'Postgres']}
 			/>
 
-			<section class="mt-8 first:mt-0">
+			<SectionContainer>
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
 					<h2 class="title">SKILLS</h2>
@@ -151,9 +152,9 @@
 						'Scrum'
 					]}
 				/>
-			</section>
+			</SectionContainer>
 
-			<section class="mt-8 first:mt-0">
+			<SectionContainer>
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
 					<h2 class="title">CONTACT</h2>
@@ -174,7 +175,7 @@
 						</ul>
 					</section>
 				</div>
-			</section>
+			</SectionContainer>
 		</div>
 		<!-- end Column -->
 	</div>
@@ -189,7 +190,7 @@
 		@apply mt-1.5 leading-normal text-gray-700 text-md;
 	}
 	.subtitle {
-		@apply text-lg font-semibold text-gray-700 leading-snugish;
+      @apply text-lg font-semibold text-gray-700 leading-snugish ;
 	}
 	.link-arrow {
 		@apply inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in;
