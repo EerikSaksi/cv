@@ -27,24 +27,24 @@
 		>
 			<SectionContainer>
 				<!-- To keep in the same column -->
-				<div class="break-inside-avoid">
+				<div class="title-container">
 					<h2 class="title">ABOUT ME</h2>
 
-					<section class="mb-4.5 break-inside-avoid">
+					<section class="item-container">
 						<header>
 							<h3 class="subtitle">Rust Developer</h3>
 						</header>
-						<p class="mt-2.1 text-md text-gray-700 leading-normal">
+						<p class="description">
 							Passionate about WebAssembly and writing fast, safe and scalable servers/microservices
 						</p>
 					</section>
 				</div>
 
-				<section class="mb-4.5 break-inside-avoid">
+				<section class="item-container">
 					<header>
 						<h3 class="subtitle">Fullstack Developer</h3>
 					</header>
-					<p class="mt-2.1 text-md text-gray-700 leading-normal">
+					<p class="description">
 						Passionate about writing fast websites with minimal javascript, cross platform mobile
 						development, and automatic servers from databases
 					</p>
@@ -53,7 +53,7 @@
 
 			<SectionContainer>
 				<!-- To keep in the same column -->
-				<div class="break-inside-avoid">
+				<div class="title-container">
 					<h2 class="title">EXPERIENCE</h2>
 					<Experience />
 				</div>
@@ -67,15 +67,13 @@
 
 			<SectionContainer>
 				<!-- To keep in the same column -->
-				<div class="break-inside-avoid">
+				<div class="title-container">
 					<h2 class="title">EDUCATION</h2>
 
-					<section class="mb-4.5 break-inside-avoid">
+					<section class="item-container">
 						<header>
 							<h3 class="subtitle">University of Glasgow</h3>
-							<p class="leading-normal text-md text-gray-650">
-								2018 – 2022 | Master's Degree in Computing
-							</p>
+							<p class="time-range">2018 – 2022 | Master's Degree in Computing</p>
 						</header>
 					</section>
 				</div>
@@ -83,7 +81,7 @@
 
 			<SectionContainer>
 				<!-- To keep in the same column -->
-				<div class="break-inside-avoid">
+				<div class="title-container">
 					<h2 class="title">PROJECTS</h2>
 					<Project>
 						<div class="flex my-1">
@@ -117,7 +115,7 @@
 
 			<SectionContainer>
 				<!-- To keep in the same column -->
-				<div class="break-inside-avoid">
+				<div class="title-container">
 					<h2 class="title">SKILLS</h2>
 				</div>
 				<Skill />
@@ -156,18 +154,15 @@
 
 			<SectionContainer>
 				<!-- To keep in the same column -->
-				<div class="break-inside-avoid">
+				<div class="title-container">
 					<h2 class="title">CONTACT</h2>
 
-					<section class="mb-4.5 break-inside-avoid">
+					<section class="item-container">
 						<ul class="list-inside pr-7">
 							<li class="contact">
 								<a href="https://eeriksak.si" class="group">
 									eeriksak.si
-									<span
-										class="link-arrow"
-										>↗</span
-									>
+									<span class="link-arrow">↗</span>
 								</a>
 							</li>
 							<li class="contact">saksi.eerik@gmail.com</li>
@@ -190,9 +185,21 @@
 		@apply mt-1.5 leading-normal text-gray-700 text-md;
 	}
 	.subtitle {
-      @apply text-lg font-semibold text-gray-700 leading-snugish ;
+		@apply text-lg font-semibold text-gray-700 leading-snugish;
 	}
 	.link-arrow {
 		@apply inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in;
+	}
+	.description {
+		@apply mt-2.1 text-md text-gray-700 leading-normal;
+	}
+	.time-range {
+		@apply leading-normal text-md text-gray-650;
+	}
+	.title-container {
+		@apply break-inside-avoid;
+	}
+	.item-container {
+		@apply mb-4.5 break-inside-avoid;
 	}
 </style>

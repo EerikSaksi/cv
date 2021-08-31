@@ -7,16 +7,16 @@
 	];
 </script>
 
-<section class="mb-4.5 break-inside-avoid">
+<section class="item-container">
 	<header>
 		<h3 class="subtitle">{company}</h3>
-		<p class="leading-normal text-md text-gray-650">
+		<p class="time-range">
 			{timeRange}
 		</p>
 	</header>
 	<ul class="">
 		{#each bulletPoints as bulletPoint}
-			<li class="mt-2.1 text-md text-gray-700 leading-normal">
+			<li class="description">
 				<span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                 {bulletPoint}
 			</li>

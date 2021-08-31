@@ -19,7 +19,7 @@
 	];
 </script>
 
-<section class="mb-4.5 break-inside-avoid">
+<section class="item-container">
 	<header>
 		<h3 class="subtitle">
 			<a {href} class="group">
@@ -32,9 +32,9 @@
 
 			<slot />
 		</h3>
-		<p class="leading-normal text-md text-gray-650">{timeRange}</p>
+		<p class="time-range">{timeRange}</p>
 	</header>
-	<p class="mt-2.1 text-md text-gray-700 leading-normal">
+	<p class="description">
 		{description}
 	</p>
 	<Techonologies {techonologyNames} />

@@ -11,7 +11,7 @@
 	import Techonologies from './_techonologies.svelte';
 </script>
 
-<section class="mb-4.5 break-inside-avoid">
+<section class="item-container">
 	<header>
 		<h3 class="subtitle">{name}</h3>
 	</header>
