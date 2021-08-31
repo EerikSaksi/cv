@@ -1,6 +1,7 @@
 <script>
 	import Experience from './_experience.svelte';
 	import Project from './_project.svelte';
+	import Skill from './_skill.svelte';
 </script>
 
 <main class="font-firago hyphens-manual">
@@ -122,6 +123,7 @@
 				name="Postgrustql"
 				timeRange="Sep 2021 - May 2022"
 				description="Postgrustql transforms a Postgres database into a GraphQL server accepting read and writes automatically. This project was designed to compete with existing projects such as Postgraphile and Hasura."
+				techonologyNames={['Rust', 'Actix Web', 'GraphQL', 'Postgres']}
 			/>
 
 			<section class="mt-8 first:mt-0">
@@ -130,48 +132,39 @@
 					<h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
 						SKILLS
 					</h2>
-
-					<section class="mb-4.5 break-inside-avoid">
-						<header>
-							<h3 class="text-lg font-semibold text-gray-700 leading-snugish">JavaScript</h3>
-							<p class="leading-normal text-md text-gray-650">Middle Level</p>
-						</header>
-						<p class="mt-2.1 text-md text-gray-700 leading-normal">
-							Good parts: pure function, higher-order functions, factory functions, composition. Bad
-							parts: inheritance, this, new.
-						</p>
-						<div class="my-3.2 last:pb-1.5">
-							<ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
-								<li
-									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-								>
-									ES6
-								</li>
-								<li
-									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-								>
-									Vue
-								</li>
-								<li
-									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-								>
-									Functional Programming
-								</li>
-								<li
-									class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
-								>
-									Node
-								</li>
-							</ul>
-						</div>
-					</section>
 				</div>
+				<Skill />
 
-				<section class="mb-4.5 break-inside-avoid">
-					<header>
-						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">Other</h3>
-					</header>
-				</section>
+				<Skill
+					name="Backend Development"
+					techonologyNames={[
+						'Django',
+						'Actix Web',
+						'node.js',
+						'MySQL',
+						'Postgres',
+						'TypeGraphQL/Typeorm'
+					]}
+				/>
+
+				<Skill
+					name="Data Science"
+					techonologyNames={['Pandas', 'scikit-learn', 'SQLAlchemy', 'Spotlight', 'Matplotlib']}
+				/>
+				<Skill
+					name="Other"
+					techonologyNames={[
+						'Haskell',
+						'Java',
+						'C/C++',
+						'Python',
+						'Linux/Bash',
+						'AMD64 Assembly',
+						'User Centered Design',
+						'Test Driven Development',
+						'Scrum'
+					]}
+				/>
 			</section>
 
 			<section class="mt-8 first:mt-0">
