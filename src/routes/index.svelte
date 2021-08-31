@@ -9,7 +9,6 @@
 	<div
 		class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white"
 	>
-		<!-- Name -->
 		<header class="flex items-center mb-8 md:mb-11">
 			<div
 				class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3"
@@ -20,7 +19,6 @@
 			</div>
 			<h1 class="text-2xl font-semibold text-gray-750 pb-px">Eerik Saksi</h1>
 		</header>
-		<!-- end Name -->
 
 		<!-- Column -->
 		<div
@@ -29,13 +27,11 @@
 			<section class="mt-8 first:mt-0">
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
-					<h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
-						ABOUT ME
-					</h2>
+					<h2 class="title">ABOUT ME</h2>
 
 					<section class="mb-4.5 break-inside-avoid">
 						<header>
-							<h3 class="text-lg font-semibold text-gray-700 leading-snugish">Rust Developer</h3>
+							<h3 class="subtitle">Rust Developer</h3>
 						</header>
 						<p class="mt-2.1 text-md text-gray-700 leading-normal">
 							Passionate about WebAssembly and writing fast, safe and scalable servers/microservices
@@ -45,7 +41,7 @@
 
 				<section class="mb-4.5 break-inside-avoid">
 					<header>
-						<h3 class="text-lg font-semibold text-gray-700 leading-snugish">Fullstack Developer</h3>
+						<h3 class="subtitle">Fullstack Developer</h3>
 					</header>
 					<p class="mt-2.1 text-md text-gray-700 leading-normal">
 						Passionate about writing fast websites with minimal javascript, cross platform mobile
@@ -57,9 +53,7 @@
 			<section class="mt-8 first:mt-0">
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
-					<h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
-						EXPERIENCE
-					</h2>
+					<h2 class="title">EXPERIENCE</h2>
 					<Experience />
 				</div>
 
@@ -73,15 +67,11 @@
 			<section class="mt-8 first:mt-0">
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
-					<h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
-						EDUCATION
-					</h2>
+					<h2 class="title">EDUCATION</h2>
 
 					<section class="mb-4.5 break-inside-avoid">
 						<header>
-							<h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-								University of Glasgow
-							</h3>
+							<h3 class="subtitle">University of Glasgow</h3>
 							<p class="leading-normal text-md text-gray-650">
 								2018 – 2022 | Master's Degree in Computing
 							</p>
@@ -93,9 +83,7 @@
 			<section class="mt-8 first:mt-0">
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
-					<h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
-						PROJECTS
-					</h2>
+					<h2 class="title">PROJECTS</h2>
 					<Project>
 						<div class="flex my-1">
 							<a href="https://play.google.com/store/apps/details?id=com.statbuff">
@@ -129,9 +117,7 @@
 			<section class="mt-8 first:mt-0">
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
-					<h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
-						SKILLS
-					</h2>
+					<h2 class="title">SKILLS</h2>
 				</div>
 				<Skill />
 
@@ -170,33 +156,21 @@
 			<section class="mt-8 first:mt-0">
 				<!-- To keep in the same column -->
 				<div class="break-inside-avoid">
-					<h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
-						CONTACT
-					</h2>
+					<h2 class="title">CONTACT</h2>
 
 					<section class="mb-4.5 break-inside-avoid">
 						<ul class="list-inside pr-7">
-							<li class="mt-1.5 leading-normal text-gray-700 text-md">
-								<a href="//webpraktikos.com" class="group">
-									webpraktikos.com
+							<li class="contact">
+								<a href="https://eeriksak.si" class="group">
+									eeriksak.si
 									<span
-										class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
+										class="link-arrow"
 										>↗</span
 									>
 								</a>
 							</li>
-							<li class="mt-1.5 leading-normal text-gray-700 text-md">
-								<a href="//twitter.com/webpraktikos" class="group">
-									twitter.com/webpraktikos
-									<span
-										class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
-										>↗</span
-									>
-								</a>
-							</li>
-							<li class="mt-1.5 leading-normal text-gray-700 text-md">1020 Wien, Austria</li>
-							<li class="mt-1.5 leading-normal text-gray-700 text-md">hi@webpraktikos.com</li>
-							<li class="mt-1.5 leading-normal text-gray-700 text-md">(+43) 0699 77 33 77 55</li>
+							<li class="contact">saksi.eerik@gmail.com</li>
+							<li class="contact">(+44) 75196987021</li>
 						</ul>
 					</section>
 				</div>
@@ -206,3 +180,18 @@
 	</div>
 	<!-- end Page -->
 </main>
+
+<style lang="postcss" global>
+	.title {
+		@apply mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal;
+	}
+	.contact {
+		@apply mt-1.5 leading-normal text-gray-700 text-md;
+	}
+	.subtitle {
+		@apply text-lg font-semibold text-gray-700 leading-snugish;
+	}
+	.link-arrow {
+		@apply inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in;
+	}
+</style>
