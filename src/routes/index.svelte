@@ -1,11 +1,11 @@
 <main class="font-firago hyphens-manual">
 	<!-- Page -->
 	<div
-		class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 print:bg-white bg-gray-100"
+		class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-a4 xsm:p-8 sm:p-9 md:p-16 print:bg-white bg-gray-100"
 	>
 		<!-- Column -->
 		<div
-			class="md:col-count-2 print:col-count-2 col-gap-md md:h-letter-col-full print:h-letter-col-full col-fill-auto"
+			class="md:col-count-2 print:col-count-2 col-gap-md md:h-a4-col-full print:h-a4-col-full col-fill-auto"
 		>
 			<section class="mt-8 first:mt-0">
 				<!-- To keep in the same column -->
