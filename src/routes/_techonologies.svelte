@@ -8,8 +8,8 @@
 			<li
 				class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200"
 			>
-              {techonologyName}
-            </li>
+				{techonologyName}
+			</li>
 		{/each}
 	</ul>
 </div>

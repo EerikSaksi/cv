@@ -126,15 +126,21 @@
 						'Django',
 						'Actix Web',
 						'node.js',
+						'TypeGraphQL/TypeORM',
+						'Diesel',
 						'MySQL',
 						'Postgres',
-						'TypeGraphQL/Typeorm'
+						'SQLite',
 					]}
 				/>
 
 				<Skill
 					name="Data Science"
 					techonologyNames={['Pandas', 'scikit-learn', 'SQLAlchemy', 'Spotlight', 'Matplotlib']}
+				/>
+				<Skill
+					name="Cloud"
+					techonologyNames={['Heroku', 'Apex', 'AWS RDS', 'Firebase Authentication', 'Vercel']}
 				/>
 				<Skill
 					name="Other"
