@@ -5,15 +5,15 @@
 	import SectionContainer from './_section_container.svelte';
 </script>
 
-<main class="font-firago hyphens-manual">
+<main class="hyphens-manual root">
 	<!-- Page -->
 	<div
-		class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white"
+		class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-letter xsm:p-8 sm:p-9 md:p-16"
 	>
 		<header class="flex items-center mb-8 md:mb-11">
 			<div
-				class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3"
-				style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/"
+				class="initials-container0mr-5 text-base leading-none text-white bg-gray-700 font-medium px-3 "
+				style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; background-color: rgb(67, 25, 111)"
 			>
 				<div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">E</div>
 				<div class="text-center initial">S</div>
@@ -130,7 +130,7 @@
 						'Diesel',
 						'MySQL',
 						'Postgres',
-						'SQLite',
+						'SQLite'
 					]}
 				/>
 
@@ -184,14 +184,31 @@
 </main>
 
 <style lang="postcss" global>
+	.root {
+		font-family: Celias;
+	}
 	.title {
-		@apply mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal;
+		@apply mb-4 font-bold tracking-widest text-sm2  print:font-normal title-override text-white pl-2 py-1 rounded-lg;
+	}
+	.title-override {
+		background-color: rgb(88, 65, 216);
 	}
 	.contact {
 		@apply mt-1.5 leading-normal text-gray-700 text-md;
 	}
+
+	.subtitle-overrides {
+		color: rgb(88, 65, 216);
+	}
+	.border-overrides {
+		border-width: 1px;
+		border-color: rgb(88, 65, 216);
+		font-size: 13px;
+		font-weight: 700
+	}
+
 	.subtitle {
-		@apply text-lg font-semibold text-gray-700 leading-snugish;
+		@apply text-lg font-semibold text-gray-700 leading-snugish subtitle-overrides;
 	}
 	.link-arrow {
 		@apply inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in;
@@ -207,5 +224,9 @@
 	}
 	.item-container {
 		@apply mb-4.5 break-inside-avoid;
+	}
+	@font-face {
+		font-family: 'Celias'; /*a name to be used later*/
+		src: url('fonts/Celias-Light.ttf'); /*URL to font*/
 	}
 </style>
