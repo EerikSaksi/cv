@@ -19,6 +19,10 @@
 				<div class="text-center initial">S</div>
 			</div>
 			<h1 class="text-2xl font-semibold text-gray-750 pb-px">Eerik Saksi</h1>
+			<a href="https://eeriksak.si" class="group ml-4 text-gray-750">
+				eeriksak.si
+				<span class="link-arrow">↗</span>
+			</a>
 		</header>
 
 		<!-- Column -->
@@ -61,7 +65,11 @@
 				<Experience
 					company="Barclays UK"
 					timeRange="Jun 2021 – Aug 2021 | Technology Developer Intern"
-					bulletPoints={['Worked in techonology resillience and incident management']}
+					bulletPoints={[
+						'Worked in techonology resillience and incident management.',
+						'Worked on task automation.',
+						'Hosted meetings demonstrating automation task.'
+					]}
 				/>
 			</SectionContainer>
 
@@ -107,10 +115,11 @@
 				</div>
 			</SectionContainer>
 			<Project
-				name="Postgrustql"
+				name="Poggers"
 				timeRange="Sep 2021 - May 2022"
-				description="Postgrustql transforms a Postgres database into a GraphQL server accepting read and writes automatically. This project was designed to compete with existing projects such as Postgraphile and Hasura."
-				techonologyNames={['Rust', 'Actix Web', 'GraphQL', 'Postgres']}
+				description="Poggers automatically generates GraphQL middleware for a Postgres database. Designed with performance and scalability in mind, it outperforms Hasura and Postgraphile."
+				techonologyNames={["Rust", "Actix Web",  "GraphQL", "Postgres", "Tokio", "async-graphql", "petgraph", "serde", "Docker"]}
+				href = "https://github.com/EerikSaksi/poggers"
 			/>
 
 			<SectionContainer>
@@ -130,13 +139,13 @@
 						'Diesel',
 						'MySQL',
 						'Postgres',
-						'SQLite',
+						'SQLite'
 					]}
 				/>
 
 				<Skill
 					name="Data Science"
-					techonologyNames={['Pandas', 'scikit-learn', 'SQLAlchemy', 'Spotlight', 'Matplotlib']}
+					techonologyNames={['Pandas', 'scikit-learn', 'SQLAlchemy', 'Spotlight', 'Matplotlib', 'Tesseract']}
 				/>
 				<Skill
 					name="Cloud"
@@ -165,14 +174,14 @@
 
 					<section class="item-container">
 						<ul class="list-inside pr-7">
+							<li class="contact">saksi.eerik@gmail.com</li>
+							<li class="contact">+447519698702</li>
 							<li class="contact">
-								<a href="https://eeriksak.si" class="group">
-									eeriksak.si
+								<a href="https://www.linkedin.com/in/eerik-saksi-b58324193/" class="group">
+									LinkedIn
 									<span class="link-arrow">↗</span>
 								</a>
 							</li>
-							<li class="contact">saksi.eerik@gmail.com</li>
-							<li class="contact">(+44) 75196987021</li>
 						</ul>
 					</section>
 				</div>
