@@ -27,7 +27,7 @@
 
 		<!-- Column -->
 		<div
-			class="md:col-count-2 print:col-count-2 col-gap-md md:h-a4-col print:h-a4-col col-fill-auto"
+			class="md:col-count-2 print:col-count-2 col-gap-md md:h-a4-col print:h-full  col-fill-auto"
 		>
 			<SectionContainer>
 				<!-- To keep in the same column -->
@@ -49,7 +49,7 @@
 						<h3 class="subtitle">Fullstack Developer</h3>
 					</header>
 					<p class="description">
-						Passionate about writing fast websites with minimal javascript, cross platform mobile
+						Passionate about writing fast websites with minimal Javascript, cross platform mobile
 						development, and automatic servers from databases
 					</p>
 				</section>
@@ -66,9 +66,18 @@
 					company="Barclays UK"
 					timeRange="Jun 2021 – Aug 2021 | Technology Developer Intern"
 					bulletPoints={[
-						'Worked in techonology resillience and incident management.',
-						'Worked on task automation.',
-						'Hosted meetings demonstrating automation task.'
+						'Worked in technology resillience and incident management',
+						'Worked on task automation',
+						'Hosted meetings demonstrating automation task'
+					]}
+				/>
+				<Experience
+					company="Aalto University"
+					timeRange="Aug 2022 – June 2023 | Software Developer"
+					bulletPoints={[
+						'Working on A+, an online learning platform for programming used by Aalto and other universities',
+						'Working with Django, docker and Kubernetes',
+						'Using pull requests to solve issues assigned at sprints'
 					]}
 				/>
 			</SectionContainer>
@@ -77,14 +86,13 @@
 				<!-- To keep in the same column -->
 				<div class="title-container">
 					<h2 class="title">EDUCATION</h2>
-
-					<section class="item-container">
-						<header>
-							<h3 class="subtitle">University of Glasgow</h3>
-							<p class="time-range">2018 – 2022 | Master's Degree in Computing</p>
-						</header>
-					</section>
 				</div>
+
+				<Experience
+					company="University of Glasgow"
+					timeRange="2018 – 2022 | Master's Degree in Computing"
+					bulletPoints={['First Class Honours with 2nd Year Entry']}
+				/>
 			</SectionContainer>
 
 			<SectionContainer>
@@ -118,8 +126,18 @@
 				name="Poggers"
 				timeRange="Sep 2021 - May 2022"
 				description="Poggers automatically generates GraphQL middleware for a Postgres database. Designed with performance and scalability in mind, it outperforms Hasura and Postgraphile."
-				techonologyNames={["Rust", "Actix Web",  "GraphQL", "Postgres", "Tokio", "async-graphql", "petgraph", "serde", "Docker"]}
-				href = "https://github.com/EerikSaksi/poggers"
+				techonologyNames={[
+					'Rust',
+					'Actix Web',
+					'GraphQL',
+					'Postgres',
+					'Tokio',
+					'async-graphql',
+					'petgraph',
+					'serde',
+					'Docker'
+				]}
+				href="https://github.com/EerikSaksi/poggers"
 			/>
 
 			<SectionContainer>
@@ -145,7 +163,14 @@
 
 				<Skill
 					name="Data Science"
-					techonologyNames={['Pandas', 'scikit-learn', 'SQLAlchemy', 'Spotlight', 'Matplotlib', 'Tesseract']}
+					techonologyNames={[
+						'Pandas',
+						'scikit-learn',
+						'SQLAlchemy',
+						'Spotlight',
+						'Matplotlib',
+						'Tesseract'
+					]}
 				/>
 				<Skill
 					name="Cloud"
@@ -175,7 +200,7 @@
 					<section class="item-container">
 						<ul class="list-inside pr-7">
 							<li class="contact">saksi.eerik@gmail.com</li>
-							<li class="contact">+447519698702</li>
+							<li class="contact">+358 40 669 1675</li>
 							<li class="contact">
 								<a href="https://www.linkedin.com/in/eerik-saksi-b58324193/" class="group">
 									LinkedIn
