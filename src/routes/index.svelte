@@ -157,7 +157,9 @@
 						'Diesel',
 						'MySQL',
 						'Postgres',
-						'SQLite'
+						'SQLite',
+						'MongoDB',
+						'Neo4j'
 					]}
 				/>
 
