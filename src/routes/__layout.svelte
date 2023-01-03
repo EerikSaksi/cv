@@ -37,7 +37,7 @@
 		}
 
 		html {
-			font-size: 11px !important;
+			font-size: 12.288px !important;
 		}
 	}
 

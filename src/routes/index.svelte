@@ -32,32 +32,6 @@
 			<SectionContainer>
 				<!-- To keep in the same column -->
 				<div class="title-container">
-					<h2 class="title">ABOUT ME</h2>
-
-					<section class="item-container">
-						<header>
-							<h3 class="subtitle">Rust Developer</h3>
-						</header>
-						<p class="description">
-							Passionate about WebAssembly and writing fast, safe and scalable servers/microservices
-						</p>
-					</section>
-				</div>
-
-				<section class="item-container">
-					<header>
-						<h3 class="subtitle">Fullstack Developer</h3>
-					</header>
-					<p class="description">
-						Passionate about writing fast websites with minimal Javascript, cross platform mobile
-						development, and automatic servers from databases
-					</p>
-				</section>
-			</SectionContainer>
-
-			<SectionContainer>
-				<!-- To keep in the same column -->
-				<div class="title-container">
 					<h2 class="title">EXPERIENCE</h2>
 					<Experience />
 				</div>
