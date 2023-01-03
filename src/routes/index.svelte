@@ -123,19 +123,11 @@
 
 				<Skill
 					name="Backend Development"
-					techonologyNames={[
-						'Django',
-						'Actix Web',
-						'node.js',
-						'TypeGraphQL/TypeORM',
-						'Diesel',
-						'MySQL',
-						'Postgres',
-						'SQLite',
-						'MongoDB',
-						'Neo4j',
-						'Dgraph'
-					]}
+					techonologyNames={['Django', 'Actix Web', 'node.js', 'TypeGraphQL/TypeORM', 'Diesel']}
+				/>
+				<Skill
+					name="Databases"
+					techonologyNames={['MySQL', 'Postgres', 'SQLite', 'MongoDB', 'Neo4j', 'Dgraph']}
 				/>
 
 				<Skill
