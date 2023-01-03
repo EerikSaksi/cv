@@ -23,6 +23,18 @@
 				eeriksak.si
 				<span class="link-arrow">↗</span>
 			</a>
+			<a href="mailto:saksi.eerik@gmail.com" class="group ml-4 text-gray-750">
+				saksi.eerik@gmail.com
+				<span class="link-arrow">↗</span>
+			</a>
+			<a href="tel:358 40 669 1675" class="group ml-4 text-gray-750">
+				+358 40 669 1675
+				<span class="link-arrow">↗</span>
+			</a>
+			<a href="https://www.linkedin.com/in/eerik-saksi-b58324193/" class="group ml-4 text-gray-750">
+				LinkedIn
+				<span class="link-arrow">↗</span>
+			</a>
 		</header>
 
 		<!-- Column -->
@@ -159,26 +171,6 @@
 						'Scrum'
 					]}
 				/>
-			</SectionContainer>
-
-			<SectionContainer>
-				<!-- To keep in the same column -->
-				<div class="title-container">
-					<h2 class="title">CONTACT</h2>
-
-					<section class="item-container">
-						<ul class="list-inside pr-7">
-							<li class="contact">saksi.eerik@gmail.com</li>
-							<li class="contact">+358 40 669 1675</li>
-							<li class="contact">
-								<a href="https://www.linkedin.com/in/eerik-saksi-b58324193/" class="group">
-									LinkedIn
-									<span class="link-arrow">↗</span>
-								</a>
-							</li>
-						</ul>
-					</section>
-				</div>
 			</SectionContainer>
 		</div>
 		<!-- end Column -->
