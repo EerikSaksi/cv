@@ -134,7 +134,7 @@
 						'SQLite',
 						'MongoDB',
 						'Neo4j',
-						'Dgraph',
+						'Dgraph'
 					]}
 				/>
 
