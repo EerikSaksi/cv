@@ -2,8 +2,8 @@
 	export let company = 'UROS';
 	export let timeRange = 'Jun 2019 – Aug 2019 | Software Engineer Intern';
 	export let bulletPoints = [
-		'Reverse engineered existing homogenous codebase into one Python solution',
-		'Maintained backwards compatibility with existing customer data'
+		'Reverse engineered a C, Labview project into a modern Python project',
+		'Maintained backwards compatibility with MySQL database containing customer data'
 	];
 </script>
 
@@ -18,7 +18,7 @@
 		{#each bulletPoints as bulletPoint}
 			<li class="description">
 				<span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                {bulletPoint}
+				{bulletPoint}
 			</li>
 		{/each}
 	</ul>

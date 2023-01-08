@@ -5,42 +5,68 @@
 	import SectionContainer from './_section_container.svelte';
 </script>
 
+<svelte:head>
+	<link
+		rel="stylesheet"
+		href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+	/>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js">
+	</script>
+</svelte:head>
+
 <main class="font-firago hyphens-manual">
 	<!-- Page -->
 	<div
 		class="p-6 mx-auto page max-w-2xl print:max-w-a4 md:max-w-a4 md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white"
 	>
-		<header class="flex items-center mb-8 md:mb-11">
-			<div
-				class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3"
-				style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/"
+		<header class="flex items-center mb-1">
+			<h1 class="text-2xl font-semibold text-gray-750 pb-px mr-3">EERIK SAKSI</h1>
+			<code
+				class="language-bash s-Uap-jPRb-uiE hljs bg-white border-2 border-2 border-gray-300 rounded-md text-gray-750"
+				><span class="hljs-built_in ">echo</span> <span class="hljs-variable">$FIRST_NAME</span> | sed
+				s/E/EE</code
 			>
-				<div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">E</div>
-				<div class="text-center initial">S</div>
+		</header>
+		<header class="flex items-center mb-4 md:mb-8">
+			<div class="border-b-4 border-gray-300 border-dotted">
+				<a href="https://eeriksak.si" class="group text-gray-750">
+					eeriksak.si
+					<span class="link-arrow">↗</span>
+				</a>
+				<a href="mailto:saksi.eerik@gmail.com" class="group ml-4 text-gray-750">
+					saksi.eerik@gmail.com
+					<span class="link-arrow">↗</span>
+				</a>
+				<a href="tel:358 40 669 1675" class="group ml-4 text-gray-750">
+					+358 40 669 1675
+					<span class="link-arrow">↗</span>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/eerik-saksi-b58324193/"
+					class="group ml-4 text-gray-750"
+				>
+					LinkedIn
+					<span class="link-arrow">↗</span>
+				</a>
 			</div>
-			<h1 class="text-2xl font-semibold text-gray-750 pb-px">Eerik Saksi</h1>
-			<a href="https://eeriksak.si" class="group ml-4 text-gray-750">
-				eeriksak.si
-				<span class="link-arrow">↗</span>
-			</a>
-			<a href="mailto:saksi.eerik@gmail.com" class="group ml-4 text-gray-750">
-				saksi.eerik@gmail.com
-				<span class="link-arrow">↗</span>
-			</a>
-			<a href="tel:358 40 669 1675" class="group ml-4 text-gray-750">
-				+358 40 669 1675
-				<span class="link-arrow">↗</span>
-			</a>
-			<a href="https://www.linkedin.com/in/eerik-saksi-b58324193/" class="group ml-4 text-gray-750">
-				LinkedIn
-				<span class="link-arrow">↗</span>
-			</a>
 		</header>
 
 		<!-- Column -->
 		<div
 			class="md:col-count-2 print:col-count-2 col-gap-md md:h-a4-col print:h-full  col-fill-auto"
 		>
+			<SectionContainer>
+				<!-- To keep in the same column -->
+				<div class="title-container">
+					<h2 class="title">EDUCATION</h2>
+				</div>
+
+				<Experience
+					company="University of Glasgow"
+					timeRange="2018 – 2022 | Master's Degree in Computing"
+					bulletPoints={['First Class Honours with 2nd Year Entry']}
+				/>
+			</SectionContainer>
 			<SectionContainer>
 				<!-- To keep in the same column -->
 				<div class="title-container">
@@ -53,8 +79,7 @@
 					timeRange="Jun 2021 – Aug 2021 | Technology Developer Intern"
 					bulletPoints={[
 						'Worked in technology resillience and incident management',
-						'Worked on task automation',
-						'Hosted meetings demonstrating automation task'
+						'Automated sending emails by formatting Oracle Database data into HTML'
 					]}
 				/>
 				<Experience
@@ -62,22 +87,9 @@
 					timeRange="Aug 2022 – June 2023 | Software Developer"
 					bulletPoints={[
 						'Working on A+, an online learning platform for programming used by Aalto and other universities',
-						'Working with Django, docker and Kubernetes',
-						'Using pull requests to solve issues assigned at sprints'
+						'Django, Docker, Kubernetes',
+						'Agile Development with sprints, pull requests, and code review'
 					]}
-				/>
-			</SectionContainer>
-
-			<SectionContainer>
-				<!-- To keep in the same column -->
-				<div class="title-container">
-					<h2 class="title">EDUCATION</h2>
-				</div>
-
-				<Experience
-					company="University of Glasgow"
-					timeRange="2018 – 2022 | Master's Degree in Computing"
-					bulletPoints={['First Class Honours with 2nd Year Entry']}
 				/>
 			</SectionContainer>
 
@@ -139,7 +151,7 @@
 				/>
 				<Skill
 					name="Databases"
-					techonologyNames={['MySQL', 'Postgres', 'SQLite', 'MongoDB', 'Neo4j', 'Dgraph']}
+					techonologyNames={['MySQL', 'Postgres', 'SQLite', 'MongoDB', 'Neo4j', 'Dgraph', 'IndraDB']}
 				/>
 
 				<Skill
