@@ -37,8 +37,8 @@
 					saksi.eerik@gmail.com
 					<span class="link-arrow">↗</span>
 				</a>
-				<a href="tel:358 40 669 1675" class="group ml-4 text-gray-750">
-					+358 40 669 1675
+				<a href="tel:44 7519 698 702" class="group ml-4 text-gray-750">
+					+44 7519 698 702
 					<span class="link-arrow">↗</span>
 				</a>
 				<a
@@ -46,6 +46,13 @@
 					class="group ml-4 text-gray-750"
 				>
 					LinkedIn
+					<span class="link-arrow">↗</span>
+				</a>
+				<a
+					href="https://github.com/EerikSaksi"
+					class="group ml-4 text-gray-750"
+				>
+					GitHub
 					<span class="link-arrow">↗</span>
 				</a>
 			</div>
