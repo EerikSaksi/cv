@@ -8,16 +8,10 @@
 	export let techonologyNames = [
 		'node.js',
 		'Postgraphile',
-		'graphql-ws',
-		'graphile-migrate',
 		'Postgres',
-		'pl/pgSQL',
 		'React Native',
 		'Typescript',
-		'React Native Paper',
-		'React Navigation',
 		'Apollo Client',
-		'GraphQL Codegen',
 	];
 </script>
 

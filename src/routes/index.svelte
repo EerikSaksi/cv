@@ -71,7 +71,7 @@
 				<Experience
 					company="University of Glasgow"
 					timeRange="2018 – 2022 | Master's Degree in Computing"
-					bulletPoints={['First Class Honours with 2nd Year Entry']}
+					bulletPoints={['First Class Honours', 'Completed five year course in four years']}
 				/>
 			</SectionContainer>
 			<SectionContainer>
@@ -81,13 +81,15 @@
 					<Experience />
 				</div>
 
+
 				<Experience
-					company="Barclays UK"
+					company="Barclays"
 					timeRange="Jun 2021 – Aug 2021 | Technology Developer Intern"
 					bulletPoints={[
 						'Worked in technology resillience and incident management',
 						'Automated sending emails by formatting Oracle Database data into HTML'
 					]}
+
 				/>
 				<Experience
 					company="Aalto University"
@@ -96,6 +98,15 @@
 						'Working on A+, an online learning platform for programming used by Aalto and other universities',
 						'Django, Docker, Kubernetes',
 						'Agile Development with sprints, pull requests, and code review'
+					]}
+				/>
+
+				<Experience
+					company="Barclays"
+					timeRange="August 2023 – Present | Graduate Technology Developer"
+					bulletPoints={[
+						'Worked as an ETL developer, generating fake customer data for testing',
+						'Worked with Java, mostly Spring APIs'
 					]}
 				/>
 			</SectionContainer>
@@ -148,6 +159,19 @@
 			<SectionContainer>
 				<!-- To keep in the same column -->
 				<div class="title-container">
+					<h2 class="title">CERTIFICATIONS</h2>
+				</div>
+				<Experience
+					company="Amazon AWS Certified Practioner"
+					timeRange="November 2023 - November 2026"
+					bulletPoints={[]}
+				/>
+			</SectionContainer>
+
+
+			<SectionContainer>
+				<!-- To keep in the same column -->
+				<div class="title-container">
 					<h2 class="title">SKILLS</h2>
 				</div>
 				<Skill />
@@ -191,6 +215,7 @@
 					]}
 				/>
 			</SectionContainer>
+
 		</div>
 		<!-- end Column -->
 	</div>

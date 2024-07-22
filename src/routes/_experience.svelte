@@ -2,7 +2,7 @@
 	export let company = 'UROS';
 	export let timeRange = 'Jun 2019 – Aug 2019 | Software Engineer Intern';
 	export let bulletPoints = [
-		'Reverse engineered a C, Labview project into a modern Python project',
+		'Reverse engineered a C, Labview machine learning project into a modern Python project',
 		'Maintained backwards compatibility with MySQL database containing customer data'
 	];
 </script>
